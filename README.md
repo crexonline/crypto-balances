@@ -43,7 +43,7 @@ balance("0xfc30a6c6d1d61f0027556ed25a670345ab39d0cb", function(error, result) {
 - Using `http://bigalice3.nem.ninja`: NEM (on port 7890)
 - Using `http://node.cyber.fund`: Bitshares with account names (on port 8055)
 - Using `http://node.cyber.fund`: Factom (on port 8077)
-- Using `https://chainz.cryptoid.info`: Dash, PeerCoin, Blackcoin, Grantcoin, CapriCoin, Rubycoin
+- Using `https://chainz.cryptoid.info`: Dash, PeerCoin, etc
 
 ## Installation
 
