@@ -16,7 +16,7 @@ module.exports =
     RegExp('^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$').test(addr)
 
   ethereum: (addr) ->
-    RegExp('^(0x)?[0-9a-f]{40}$').test(addr)
+    RegExp('^(0x)?[0-9a-fA-F]{40}$').test(addr)
 
   ripple: (addr) ->
     RegExp('^r[1-9A-HJ-NP-Za-km-z]{25,33}$').test(addr)
