@@ -4,9 +4,8 @@ _ = require("lodash")
 InvalidResponseError = require("../errors").InvalidResponseError
 
 tbtc = (addr) ->
-  network = if (addr[0] == '1' || addr[0] == '3') then 'TBTC'
 
-  url = "https://tbtc.blockr.io/api/v1/address/info/#{network}/#{addr}"
+  url = "https://tbtc.blockr.io/api/v1/address/info/#{addr}"
 
   req(url, json: true)
     .timeout(3000)
