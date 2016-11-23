@@ -9,6 +9,9 @@ module.exports =
     # else false
     RegExp('^[13][a-km-zA-HJ-NP-Z1-9]{25,34}$').test(addr) || RegExp('^L[a-km-zA-HJ-NP-Z1-9]{33}$').test(addr)
 
+  tbtc: (addr) ->
+    RegExp('^[2mn][1-9A-HJ-NP-Za-km-z]{26,35}$').test(addr)
+    
   doge: (addr) ->
     RegExp('^D[a-km-zA-HJ-NP-Z1-9]{33}$').test(addr)
 
