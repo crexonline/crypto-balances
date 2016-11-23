@@ -4,9 +4,7 @@ _ = require("lodash")
 InvalidResponseError = require("../errors").InvalidResponseError
 
 tbtc = (addr) ->
-
   url = "https://tbtc.blockr.io/api/v1/address/info/#{addr}"
-
   req(url, json: true)
     .timeout(3000)
     .cancellable()
@@ -15,8 +13,8 @@ tbtc = (addr) ->
         status: "success"
         service: "https://tbtc.blockr.io"
         address: addr
-        quantity: json.data.confirmed_balance
-        asset: network
+        quantity: json.balance
+        asset: "TBTC"
       else
         if _.isObject(json) and json.message == "error"
           []
